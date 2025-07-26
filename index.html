@@ -103,7 +103,7 @@
             padding: 25px;
             overflow: hidden;
             box-shadow: 0 0 40px rgba(0, 60, 255, 0.7);
-            background: rgba(0, 0, 0, 0.2); /* Added transparency */
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .wave-section::before {
@@ -116,7 +116,7 @@
             background: linear-gradient(135deg, #0a1a5e, #1a4ab5, #0062c4);
             z-index: -1;
             animation: gradientPulse 4s ease infinite;
-            border-radius: 14px; /* Smoother corners to match container */
+            border-radius: 14px;
         }
 
         /* ZENITH Section (Darker Purple/Pink) */
@@ -126,7 +126,7 @@
             padding: 25px;
             overflow: hidden;
             box-shadow: 0 0 40px rgba(110, 20, 180, 0.7);
-            background: rgba(0, 0, 0, 0.2); /* Added transparency */
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .zenith-section::before {
@@ -139,7 +139,7 @@
             background: linear-gradient(135deg, #4a0d8a, #6a1b9a, #ad1dcd);
             z-index: -1;
             animation: gradientPulse 4s ease infinite;
-            border-radius: 14px; /* Smoother corners to match container */
+            border-radius: 14px;
         }
 
         @keyframes gradientPulse {
@@ -257,10 +257,10 @@
         <div class="wave-section">
             <h2 class="section-title">WAVE</h2>
             <div class="buttons-container">
-                <button class="btn install-btn">
+                <a href="https://cdn.wavify.cc/userinterface/Wave-Setup.exe" download="Wave-Setup.exe" class="btn install-btn">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Windows" class="windows-icon">
                     Install
-                </button>
+                </a>
                 <button class="btn buy-btn">
                     <span class="key-icon">🔑</span>
                     Buy
@@ -276,7 +276,7 @@
         <div class="zenith-section">
             <h2 class="section-title">ZENITH</h2>
             <div class="buttons-container">
-                <button class="btn install-btn">
+                <button class="btn install-btn" onclick="window.open('https://zenith.win/auth/login', '_blank')">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Windows" class="windows-icon">
                     Install
                 </button>
